@@ -1,16 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Sejarah from '../components/Sejarah.jsx';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<!--
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		-->
+		<Sejarah />
 		<p class="instructions">
 			Check out the <code>src/pages</code> directory to get started.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
+			<Card href="/sejarah" title="Sejarah"
+			    body="Halaman Astro saya mengenai Sejarah"
+			/>
+			<Card href="/test-1.html"
+			    title="Test 1"
+				body="This is the body of Test 1 from inside index.astro" 
+			/>
+			<Card href="/people.html"
+			    title="People HTML"
+				body="People HTML Page" />
 			<Card
 				href="https://docs.astro.build/"
 				title="Documentation"
