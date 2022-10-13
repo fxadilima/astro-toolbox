@@ -10,10 +10,10 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>Adi Lima: Personal Page</title>
 	</head>
 	<body>
 		<slot />
@@ -31,14 +31,14 @@ const { title } = Astro.props;
 	}
 
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		font-size: var(--font-size-base);
 		color: var(--color-text);
 		background-color: var(--color-bg);
 	}
 
 	body {
-		margin: 0;
+		margin: 5px;
 	}
 
 
@@ -54,7 +54,7 @@ const { title } = Astro.props;
 	}
 
 	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+		font-family: Menlo, Monaco, Consolas, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 </style>
