@@ -1,0 +1,26 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{Astro.props.title}</title>
+        <link rel="stylesheet" href="./w3.css">
+    </head>
+    <body>
+        <div class="w3-main">
+            <article class="w3-container w3-row-padding">
+                <div class="w3-content">
+                    <slot />
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
